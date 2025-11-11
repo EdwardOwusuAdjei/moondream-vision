@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-This project uses the Moondream2 model to perform real-time object detection on a video stream from a webcam. It identifies specified objects and draws bounding boxes around them in the live video feed.
+This project uses the Moondream2 vision-language model to perform real-time object detection and scene understanding. It supports both webcam feeds and video file processing, with two powerful modes: **Detection mode** for identifying objects matching text prompts, and **Caption mode** for generating detailed AI-powered descriptions of detected regions. The system features interactive prompt updates, smart bounding box visualization with text wrapping, and the ability to save processed videos with annotations. Enjoy ;)
 
 ## Example Output
 
