@@ -9,7 +9,7 @@ This project uses the Moondream2 vision-language model to bridge natural languag
 
 ## Example Output
 
-See the detection and captioning in action! Watch the demo below (need to resize - takes a while to load - sorry :()):
+See the detection and captioning in action! Watch the demo below (need to resize - takes a while to load - sorry :( :
 
 ![Demo GIF](demo/demo.gif)
 
