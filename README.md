@@ -7,6 +7,14 @@
 
 This project uses the Moondream2 model to perform real-time object detection on a video stream from a webcam. It identifies specified objects and draws bounding boxes around them in the live video feed.
 
+## Example Output
+
+See the detection and captioning in action! Watch the demo below:
+
+![Demo GIF](demo/demo.gif)
+
+
+
 ## Features
 
 - **Real-time object detection** from a webcam feed or video files
@@ -103,7 +111,7 @@ python main.py -f videos/Gus.mp4 -p "what is going on?" -m caption
 # Process a video and save the output
 python main.py -f videos/Gus.mp4 -o output.mp4 -p "a person"
 
-# Full example: Process video, generate captions, and save to output.mp4
+# Full example: Process video, generate captions, and save to output
 python main.py -f videos/Gus.mp4 -o output.mp4 -p "what is going on?" -m caption
 ```
 

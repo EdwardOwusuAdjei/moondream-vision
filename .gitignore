@@ -161,8 +161,9 @@ outputs/
 *.mov
 *.mkv
 *.webm
-!input.mp4  # Allow input.mp4 for testing examples
+*.gif
 !videos/*.mp4  # Allow videos in videos/ folder
+!demo/*.gif  # Allow demo GIFs
 !tests/fixtures/*.mp4  # Keep test fixtures
 
 # Logs
