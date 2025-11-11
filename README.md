@@ -1,15 +1,15 @@
-# Moondream Real-time Object Detector
+# Moondream Vision-Language Dectector
 
 [![Tests](https://github.com/EdwardOwusuAdjei/moondream-vision/actions/workflows/tests.yml/badge.svg)](https://github.com/EdwardOwusuAdjei/moondream-vision/actions/workflows/tests.yml)
 [![Coverage](https://img.shields.io/badge/coverage-98%25-brightgreen)](https://github.com/EdwardOwusuAdjei/moondream-vision)
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-This project uses the Moondream2 vision-language model to perform real-time object detection and scene understanding. It supports both webcam feeds and video file processing, with two powerful modes: **Detection mode** for identifying objects matching text prompts, and **Caption mode** for generating detailed AI-powered descriptions of detected regions. The system features interactive prompt updates, smart bounding box visualization with text wrapping, and the ability to save processed videos with annotations. Enjoy ;)
+This project uses the Moondream2 vision-language model to bridge natural language and visual understanding in real-time. It's more than an object detector—it's a natural language interface to visual scenes. You can ask questions in plain English like "what is going on?", "a person", or "a coffee mug", and the system understands and responds visually. It supports both webcam feeds and video file processing, with two powerful modes: **Detection mode** for finding objects based on natural language prompts, and **Caption mode** for generating rich, contextual descriptions of what the AI sees. The system features interactive prompt updates, smart bounding box visualization with text wrapping, and the ability to save processed videos with annotations. Enjoy ;)
 
 ## Example Output
 
-See the detection and captioning in action! Watch the demo below:
+See the detection and captioning in action! Watch the demo below (need to resize - takes a while to load - sorry :()):
 
 ![Demo GIF](demo/demo.gif)
 
