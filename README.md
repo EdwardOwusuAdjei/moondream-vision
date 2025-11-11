@@ -9,10 +9,13 @@ This project uses the Moondream2 model to perform real-time object detection on 
 
 ## Features
 
-- Real-time object detection from a webcam feed.
-- Bounding box visualization for detected objects.
-- Configurable model and detection settings.
-- Well-structured and easy-to-understand codebase.
+- **Real-time object detection** from a webcam feed or video files
+- **Two operation modes**: Detection mode and Caption mode
+  - **Detection mode**: Detects objects matching your prompt and labels them
+  - **Caption mode**: Generates AI-powered detailed descriptions for detected objects
+- **Bounding box visualization** with smart text wrapping
+- **Configurable model and detection settings**
+- **Well-structured and easy-to-understand codebase**
 
 ## Setup
 
@@ -46,18 +49,42 @@ python main.py
 
 This will start the webcam and begin detecting the default object ("what are the objects in the scene").
 
+### Operation Modes
+
+The application supports two modes:
+
+#### Detection Mode (Default)
+Detects objects matching your prompt and labels them with the prompt text:
+
+```bash
+python main.py -p "a person"
+# or explicitly
+python main.py -p "a person" -m detect
+```
+
+#### Caption Mode
+Detects objects and generates detailed AI-powered captions for each detected region:
+
+```bash
+python main.py -p "a person" -m caption
+```
+
+In caption mode, the system will:
+1. Detect objects matching your prompt
+2. Crop each detected region
+3. Generate a detailed caption (e.g., "a person wearing a blue shirt standing in a room")
+4. Display the caption as the label
+
+This is perfect for getting rich, contextual descriptions of what the AI sees!
+
 ### Custom Object Detection
 
-You can specify a different object to detect by using the `--prompt` or `-p` command-line argument:
+You can specify different objects to detect using the `--prompt` or `-p` argument:
 
 ```bash
 python main.py --prompt "a coffee mug"
-```
-
-or
-
-```bash
 python main.py -p "a pair of glasses"
+python main.py -p "a laptop" -m caption  # With detailed captions
 ```
 
 ### Mac Users
@@ -93,14 +120,20 @@ python main.py -p "a pair of glasses"
 python main.py -p "a laptop"
 ```
 - Draws boxes around the specified objects
-- Labels match the prompt text
+- Labels match the prompt text (in detection mode)
 
-#### Caption Mode (Detailed Descriptions)
+#### Caption Mode Examples
 ```bash
+# Get detailed descriptions of detected people
 python main.py -p "a person" -m caption
+
+# Get detailed descriptions of objects
+python main.py -p "a coffee mug" -m caption
+python main.py -p "a laptop" -m caption
 ```
 - Draws boxes around detected objects
-- Labels are AI-generated captions (e.g., "a person wearing a blue shirt standing in a room")
+- Labels are AI-generated captions with rich details
+- Example captions: "a person wearing a blue shirt standing in a room", "a white coffee mug on a wooden table"
 
 #### General Scene Query
 ```bash
