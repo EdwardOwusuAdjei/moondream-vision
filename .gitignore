@@ -162,9 +162,13 @@ outputs/
 *.mkv
 *.webm
 *.gif
-!videos/*.mp4  # Allow videos in videos/ folder
-!demo/*.gif  # Allow demo GIFs
-!tests/fixtures/*.mp4  # Keep test fixtures
+# Exceptions - must come after the general patterns
+!videos/
+!videos/*.mp4
+!demo/
+!demo/*.gif
+!tests/fixtures/
+!tests/fixtures/*.mp4
 
 # Logs
 *.log
