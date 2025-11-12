@@ -7,7 +7,7 @@ application.
 import torch
 
 # Model Configuration
-MODEL_ID = "vikhyatk/moondream2"
+MODEL_ID = "vikhyatk/moondream2" #The idea is one day we can integrate other models but for now this is the only one we support.
 MODEL_REVISION = "2025-01-09"
 DEVICE = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
 DTYPE = torch.float16 if torch.cuda.is_available() else torch.bfloat16
