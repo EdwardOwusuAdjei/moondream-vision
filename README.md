@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-This project uses the Moondream2 vision-language model to bridge natural language and visual understanding in real-time. It's more than an object detector—it's a natural language interface to visual scenes. You can ask questions in plain English like "what is going on?", "a person", or "a coffee mug", and the system understands and responds visually. It supports both webcam feeds and video file processing, with two powerful modes: **Detection mode** for finding objects based on natural language prompts, and **Caption mode** for generating rich, contextual descriptions of what the AI sees. The system features interactive prompt updates, smart bounding box visualization with text wrapping, and the ability to save processed videos with annotations. Enjoy ;)
+This project uses the Moondream2 vision-language model to bridge natural language and visual understanding in real-time. Think of it as a natural language interface to visual scenes that goes beyond traditional object detection. You can ask questions in plain English like "what is going on?", "a person", or "a coffee mug", and the system understands and responds visually. It supports both webcam feeds and video file processing, with two powerful modes: **Detection mode** for finding objects based on natural language prompts, and **Caption mode** for generating rich, contextual descriptions of what the AI sees. The system features interactive prompt updates, smart bounding box visualization with text wrapping, and the ability to save processed videos with annotations. Enjoy ;)
 
 ## Example Output
 
