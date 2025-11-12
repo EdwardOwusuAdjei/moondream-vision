@@ -13,6 +13,8 @@ See the detection and captioning in action! Watch the demo below (need to resize
 
 ![Demo GIF](demo/demo.gif)
 
+**Or [click here to view the demo directly](demo/demo.gif)** (open in browser for faster loading )
+
 
 
 ## Features

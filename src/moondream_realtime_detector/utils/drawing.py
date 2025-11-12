@@ -1,7 +1,7 @@
 """Utility functions for drawing on images.
 
 This module provides functions for drawing bounding boxes, labels, and other
-informational text on image frames.
+informational text on image frames. Guys if you notice anything you can help improve this submit a PR.
 """
 
 import cv2
@@ -51,7 +51,7 @@ def draw_bounding_boxes(
             settings.BBOX_THICKNESS,
         )
 
-        # Draw wrapped label, ensuring it stays within the screen bounds and doesn't overlap
+        # Draw label with "smart" wrapping to avoid overlap
         _draw_wrapped_text(frame, label, x_min, y_min, x_max, width, used_areas, height)
 
     return frame
